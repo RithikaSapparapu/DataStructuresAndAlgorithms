@@ -92,5 +92,6 @@ int main()
     displayList(headnode);
     headnode->next->next->next->next->next->next->next = headnode->next->next->next;
     headnode = removeLoop(headnode);
-    cout << "list after removing the loop: " displayList(headnode);
+    cout << "list after removing the loop: ";
+    displayList(headnode);
 }
