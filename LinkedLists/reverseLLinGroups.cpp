@@ -14,6 +14,7 @@ struct node
     }
 };
 
+//can also be solved using a stack but the space complexity increases to O(n)
 struct node *reverse(struct node *head, int k)
 {
     node *t = head;
