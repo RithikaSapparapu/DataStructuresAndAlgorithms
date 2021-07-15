@@ -14,6 +14,7 @@ struct node
     }
 };
 
+////can also be solved using stack.
 struct node *reverse(struct node *head, int k)
 {
     node *t = head;

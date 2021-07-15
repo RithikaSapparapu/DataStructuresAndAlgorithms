@@ -8,7 +8,6 @@ struct node
     node *next;
 };
 
-//can also be solved using stack.
 node *reverseLLiterative(node *head)
 {
     node *cur = head;
