@@ -8,20 +8,6 @@ struct node
     node *next;
 };
 
-node *reverseLLiterative(node *head)
-{
-    node *cur = head;
-    node *prev = NULL;
-    while (cur != NULL)
-    {
-        node *temp = cur->next;
-        cur->next = prev;
-        prev = cur;
-        cur = temp;
-    }
-    return prev;
-}
-
 bool checkifCircular(node *head)
 {
     node *temp = head;
@@ -82,7 +68,7 @@ int main()
         insertEnd(&headnode, p);
         p += 2;
     }
-    //headnode->next->next->next->next->next->next = headnode;
+    headnode->next->next->next->next->next->next = headnode;
     bool t = checkifCircular(headnode);
     cout << t;
 }
